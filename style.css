@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* HEADER */
+
+* {
+   margin: 0;
+   padding: 0;
+   background-color: #8e8974;
+   list-style: none;
+   text-decoration: none;
+}
+
+header {
+   height: 90px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+nav {
+   width: 60%;
+}
+
+ul {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+
+li {
+   list-style: none;
+   color: aliceblue;
+   cursor: pointer;
+   font-size: 22px;
+   font-weight: bold;
+   transition: .5s;
+   font-family: 'Montserrat', sans-serif;
+}
+
+li:hover {
+   color: #ffb951;
+   padding-bottom: 5px;
+   border-bottom: 2px solid #ffb951;
+}
+
+#logo {
+   width: 150px;
+   height: auto;
+}
+
+/* BANNER */
+
+#banner {
+   background-image: url('imagens/img02.jpg'); 
+   background-size: cover;
+   background-position: left top;
+   width: 100%;
+   height: 500px;
+}
+
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   margin: 20px;
+}
+
+#video {
+   display: flex;
+   width: 40%;
+   height: auto;
+}
+
+#sinopse {
+   max-width: 450px;
+   font-size: 20px;
+   text-align: justify;
+   color: white;
+   font-family: 'Montserrat', sans-serif;
+   text-shadow: 3px 3px 5px black;
+}
+
+.button {
+   margin-top: 25px;
+   font-size: 15px;
+   font-weight: bold;
+   padding: 15px;
+   border: 2px solid #42341c;
+   border-radius: 10px;
+   color: white;
+   
+}
+
+.button:hover {
+   background-color: #ffb951;
+   cursor: pointer;
+   color: #42341c;
+}
+
+.fotos {
+   border-top: 1px solid #42341c;
+   display: flex;
+   justify-content: space-around;
+   padding: 15px;
+}
+
+.foto {
+   width: 45%;
+}
+
+footer {
+   margin: 25px 3px 2px 3px;
+   text-align: center;
+   border: 1px solid #42341c;
+   padding: 30px;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 970px) {
+   #sinopse {
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 720px) {
+   ul {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      flex-direction: column;
+   }
+   
+   li {
+      list-style: none;
+      color: aliceblue;
+      cursor: pointer;
+      font-size: 19px;
+      transition: .5s;
+      font-family: 'Montserrat', sans-serif;
+   }
+
+   .container {
+      flex-direction: column;
+   }
+
+   #banner {
+      background-position: center center;
+      height: 390px;
+   }
+
+   #video {
+      width: 80%;
+   }
+
+   .fotos {
+      flex-direction: column;
+   }
+
+   .foto {
+      width: 80%;
+      align-self: center;
+      padding-top: 10px;
+   }
+}
